@@ -2,7 +2,7 @@ void settings() {
   size(400, 800, P2D);
 }
 void setup() {
-  background(255, 204, 0);
+  background(255, 104, 0);
   noLoop();
 }
 void draw() {
@@ -29,8 +29,9 @@ void plant(int numLeaves, float minLeafScale, float maxLeafScale){
     
     pushMatrix(); //saves the current background position
     
-    rotate(angle); //when these operations are performed the background is moving
+     //when these operations are performed the background is moving
     translate(x,y);
+    rotate(angle);
     scale(scale);
     leaf();
     popMatrix(); //the backgorund position is reset to default values
